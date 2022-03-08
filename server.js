@@ -110,7 +110,7 @@ app.listen(port, function () {
   console.log('Example app listening on port' + port +"!");
 });
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://justin:123@cluster0-lz9gz.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }, () => {
+mongoose.connect(process.env.MONGODB_URI , { useNewUrlParser: true, useUnifiedTopology: true }, () => {
   console.log("connected to DB!")
 })
 
